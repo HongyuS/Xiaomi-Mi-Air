@@ -64,14 +64,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Customize VoodooPS2Keyboard</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-KBD0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Custom ADB Keyboard</string>
 				<key>Enabled</key>
 				<true/>
@@ -818,6 +810,24 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
+				<string>BrightnessKeys.kext</string>
+				<key>Comment</key>
+				<string>Brightness Keys</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrightnessKeys</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
 				<string>SATA-unsupported.kext</string>
 				<key>Comment</key>
 				<string>SATA</string>
@@ -1323,7 +1333,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 darkwake=0 gfxrst=1 igfxonln=1 igfxonlnfbs=0x010203 itlwm_cc=CN</string>
+				<string>keepsyms=1 darkwake=0 gfxrst=1 igfxonln=1 igfxonlnfbs=0x010203 itlwm_cc=CN -lilubetaall</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>prev-lang:kbd</key>
